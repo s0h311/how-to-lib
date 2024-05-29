@@ -1,0 +1,6 @@
+/*
+ * Public API Surface of fantastic-ng
+ */
+export * from './lib/fantastic-ng.service';
+export * from './lib/fantastic-ng.component';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Byb2plY3RzL2ZhbnRhc3RpYy1uZy9zcmMvcHVibGljLWFwaS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7R0FFRztBQUVILGNBQWMsNEJBQTRCLENBQUM7QUFDM0MsY0FBYyw4QkFBOEIsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gKiBQdWJsaWMgQVBJIFN1cmZhY2Ugb2YgZmFudGFzdGljLW5nXG4gKi9cblxuZXhwb3J0ICogZnJvbSAnLi9saWIvZmFudGFzdGljLW5nLnNlcnZpY2UnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvZmFudGFzdGljLW5nLmNvbXBvbmVudCc7XG4iXX0=

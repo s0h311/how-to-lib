@@ -1,0 +1,15 @@
+dialog {
+  display: grid;
+  padding: 16px;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.ctaRow {
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    width: 100%;
+  }
+}
