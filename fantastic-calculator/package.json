@@ -1,5 +1,5 @@
 {
-  "name": "how-to-lib",
+  "name": "fantastic-calculator",
   "version": "0.0.1",
   "description": "Just a TypeScript library",
   "type": "module",
@@ -7,7 +7,8 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "build": "tsup",
+    "build:watch": "tsup --watch",
     "build-esm": "esbuild --bundle ./src/index.ts --platform=browser --outdir=dist --packages=external --format=esm --out-extension:.js=.mjs --minify",
     "build-cjs": "esbuild --bundle ./src/index.ts --platform=browser --outdir=dist --packages=external --format=cjs --out-extension:.js=.cjs --minify",
     "test": "vitest",
