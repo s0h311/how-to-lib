@@ -5,7 +5,7 @@
 1. Create an empty directory
 
 ```bash
-mkdir fantastic-calculator
+mkdir fantastic-calculator; cd $_
 ```
 
 2. Initialize a node project
@@ -23,7 +23,7 @@ npm i -D tsup typescript @changesets/cli vitest
 4. Add an `indxe.ts` file. This will be the entry point of our library
 
 ```bash
-touch src/index.ts
+mkdir src; touch $_/index.ts
 ```
 
 5. Add entry points to `package.json`
@@ -65,7 +65,7 @@ npm pkg set scripts.build="tsup" scripts.test="vitest" scripts.lint="tsc"
 
 We use the TypeScript compiler `tsc` to lint our project. When running it, it will throw any error found.
 
-7. Add a `tsconfig-json`. It could look like this:
+7. Add a `tsconfig.json`. It could look like this:
 
 ```json
 {
@@ -80,11 +80,7 @@ We use the TypeScript compiler `tsc` to lint our project. When running it, it wi
 }
 ```
 
-8. Finally create a `src/` and `test/` directories.
-
-```bash
-mdkir src test
-```
+8. Finally create a first test in `test/addition.test.ts` and run it with `npm run test`
 
 ## Build the `dist`
 
@@ -109,4 +105,5 @@ npm link
 - https://angular.dev/tools/libraries/creating-libraries/
 - https://angular.dev/reference/configs/file-structure#library-project-files
 - https://tsup.egoist.dev/#what-can-it-bundle
+- https://www.totaltypescript.com/concepts/mjs-cjs-mts-and-cts-extensions
 -

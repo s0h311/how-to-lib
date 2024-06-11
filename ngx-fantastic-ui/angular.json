@@ -1,0 +1,99 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "fantastic-dialog": {
+      "projectType": "library",
+      "root": "projects/fantastic-dialog",
+      "sourceRoot": "projects/fantastic-dialog/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/fantastic-dialog/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/fantastic-dialog/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/fantastic-dialog/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/fantastic-dialog/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/fantastic-dialog/**/*.ts",
+              "projects/fantastic-dialog/**/*.html"
+            ],
+            "eslintConfig": "projects/fantastic-dialog/eslint.config.js"
+          }
+        }
+      }
+    },
+    "fantastic-dialog-neo": {
+      "projectType": "library",
+      "root": "projects/fantastic-dialog-neo",
+      "sourceRoot": "projects/fantastic-dialog-neo/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/fantastic-dialog-neo/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/fantastic-dialog-neo/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/fantastic-dialog-neo/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/fantastic-dialog-neo/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/fantastic-dialog-neo/**/*.ts",
+              "projects/fantastic-dialog-neo/**/*.html"
+            ],
+            "eslintConfig": "projects/fantastic-dialog-neo/eslint.config.js"
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "cfc16555-cbee-4dcd-864a-72709138a658",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
+  }
+}

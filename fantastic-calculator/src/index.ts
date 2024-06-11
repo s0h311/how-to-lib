@@ -1,1 +1,1 @@
-export * from "./calculator";
+export { addition } from "./addition";

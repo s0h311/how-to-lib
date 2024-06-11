@@ -4,6 +4,6 @@
  * @param b second addent
  * @returns sum
  */
-declare function addition(a: number, b: number): number;
-
-export { addition };
+export function addition(a: number, b: number): number {
+  return a + b;
+}

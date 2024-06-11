@@ -1,0 +1,9 @@
+div:nth-of-type(1) {
+  display: grid;
+  height: 100dvh;
+  place-items: center;
+}
+
+p {
+  font-size: 40px;
+}

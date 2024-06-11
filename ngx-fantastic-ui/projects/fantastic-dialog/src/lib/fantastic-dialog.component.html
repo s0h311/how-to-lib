@@ -1,0 +1,20 @@
+<dialog #rootDialog>
+  <div class="dialog-body">
+    <button class="close-icon" (click)="close()">X</button>
+
+    <div>
+      <ng-content></ng-content>
+    </div>
+
+    @if (discardCtaText || continueCtaText) {
+    <div class="cta-row">
+      @if (discardCtaText) {
+      <button (click)="(handleDiscard)">{{ discardCtaText }}</button>
+
+      } @if ( continueCtaText ) {
+      <button class="handleContinue">{{ continueCtaText }}</button>
+      }
+    </div>
+    }
+  </div>
+</dialog>

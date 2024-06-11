@@ -1,1 +1,1 @@
-function e(r,n){return r+n}export{e as addition};
+function e(n,r){return n+r}export{e as addition};

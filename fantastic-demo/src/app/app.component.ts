@@ -1,17 +1,19 @@
-import { Component, computed, signal } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { Component, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { FantasticDialogComponent } from 'fantastic-dialog';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule],
+  imports: [RouterOutlet, FantasticDialogComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  public val1 = signal(1);
-  public val2 = signal(2);
+  @ViewChild('fantasticDialog')
+  public fantasticDialog!: FantasticDialogComponent;
 
-  public result = computed(() => this.val1() + this.val2());
+  public openDialog(): void {
+    this.fantasticDialog.showModal();
+  }
 }
