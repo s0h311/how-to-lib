@@ -106,4 +106,5 @@ npm link
 - https://angular.dev/reference/configs/file-structure#library-project-files
 - https://tsup.egoist.dev/#what-can-it-bundle
 - https://www.totaltypescript.com/concepts/mjs-cjs-mts-and-cts-extensions
--
+- https://youtu.be/6_JNPmjSevo?si=MVYZ3j1AjVbw9cwJ
+- https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages#publishing-packages-using-yarn
